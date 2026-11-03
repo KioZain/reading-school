@@ -1,0 +1,2 @@
+import{it,expect}from'vitest';import{demoFrame,DEMO_UNIT_MS,DEMO_GAP_MS}from'./demo';
+it('plays units in order and stops without producing a reading result',()=>{expect(demoFrame(0,2)).toEqual({unit:0,progress:0});expect(demoFrame(DEMO_UNIT_MS,2)?.progress).toBe(1);expect(demoFrame(DEMO_UNIT_MS+DEMO_GAP_MS,2)?.unit).toBe(1);expect(demoFrame((DEMO_UNIT_MS+DEMO_GAP_MS)*2,2)).toBe(null);expect(demoFrame((DEMO_UNIT_MS+DEMO_GAP_MS)*2,2,true)?.unit).toBe(0)});

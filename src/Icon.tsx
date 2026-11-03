@@ -1,5 +1,5 @@
 import type {ReactNode} from 'react';
-export type IconName='book'|'home'|'profile'|'settings'|'undo'|'arrow'|'lock'|'check'|'star'|'trail'|'people'|'leaf'|'cloud'|'cake'|'car'|'pencil'|'notebook'|'bear'|'bug'|'sun'|'flower'|'fox'|'info'|'bunny'|'chick'|'frog'|'sound'|'sparkle';
+export type IconName='book'|'home'|'profile'|'settings'|'undo'|'arrow'|'lock'|'check'|'star'|'trail'|'people'|'leaf'|'cloud'|'cake'|'car'|'pencil'|'notebook'|'bear'|'bug'|'sun'|'flower'|'fox'|'info'|'bunny'|'chick'|'frog'|'sound'|'sparkle'|'megaphone'|'stop'|'play'|'help'|'close';
 // Mirrors the toy palette in tokens.css. Illustrations bake their colours in; glyphs use currentColor.
 const C={ink:'#3a2f2a',white:'#fff',grass:'#4cc35a',grassLip:'#2f9a40',grassLight:'#8ee07f',sun:'#ffc93c',sunLip:'#f0a91c',orange:'#ff8a3d',orangeLip:'#d9631c',skyTint:'#dff1ff',skyShade:'#bfe1fa',sky:'#4fb3f6',berry:'#ff7aa8',berryTint:'#ffe1ec',lav:'#9b82f5',lavLip:'#7158d1',brown:'#c98b4a',brownLip:'#9c6330',cream:'#ffe9c9',steel:'#ddd5cc',cherry:'#ff5468'};
 const hole={fill:'var(--icon-hole, #fff)'};
@@ -25,6 +25,11 @@ const glyphs:Partial<Record<IconName,ReactNode>>={
  people:<g fill="currentColor"><circle cx="8.5" cy="7.5" r="3.3"/><path d="M2.5 20c0-3.6 2.7-6.2 6-6.2s6 2.6 6 6.2Z"/><circle cx="17" cy="9.5" r="2.6"/><path d="M14.8 20c.3-3 1.4-5 3.4-5 2.4 0 3.6 2.2 3.6 5Z"/></g>,
  info:<><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"/><path d="M12 11v5.5" style={{stroke:'var(--icon-hole, #fff)'}} strokeWidth="2.8"/><circle cx="12" cy="7.6" r="1.7" style={hole} stroke="none"/></>,
  sound:<><path d="M4 9.5h3l4.5-4v13L7 14.5H4Z" fill="currentColor"/><path d="M15 9a4 4 0 0 1 0 6M17.8 6.5a7.5 7.5 0 0 1 0 11"/></>,
+ megaphone:<><path d="M3.5 10v3.5a1.5 1.5 0 0 0 1.5 1.5h2l8 4.5V4.5L7 9H5a1.5 1.5 0 0 0-1.5 1Z" fill="currentColor"/><path d="M7.5 15.5l1.3 4"/><path d="M18 9.8a3 3 0 0 1 0 4.4M20 7.6a6.5 6.5 0 0 1 0 8.8"/></>,
+ stop:<rect x="6" y="6" width="12" height="12" rx="3" fill="currentColor"/>,
+ play:<path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.8l-10-6.5A1 1 0 0 0 8 5.5Z" fill="currentColor"/>,
+ help:<><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"/><path d="M9.4 9.4a2.6 2.6 0 1 1 3.7 2.4c-.7.3-1.1.9-1.1 1.6v.4" style={{stroke:'var(--icon-hole, #fff)'}} strokeWidth="2.6"/><circle cx="12" cy="16.9" r="1.5" style={hole} stroke="none"/></>,
+ close:<path d="M7 7l10 10M17 7 7 17" strokeWidth="3.2"/>,
  sparkle:<path d="M12 4c.8 4.4 2.2 6.4 6.5 8-4.3 1.6-5.7 3.6-6.5 8-.8-4.4-2.2-6.4-6.5-8 4.3-1.6 5.7-3.6 6.5-8Z" fill="currentColor"/>,
 };
 /** Flat multicolour characters and objects on a 64 grid. */
