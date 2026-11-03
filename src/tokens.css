@@ -1,0 +1,43 @@
+:root {
+  --target-min: 56px;
+  --target-comfort: 64px;
+  /* Toy palette: each colour has a tint (surfaces), a base (fills) and a lip (the pseudo-3D edge). */
+  --c-grass-tint: #e3f6d6; --c-grass: #38a948; --c-grass-lip: #25823a;
+  --c-sun-tint: #fff2c2; --c-sun: #ffc93c; --c-sun-lip: #e09e12; --c-sun-ink: #9a6400;
+  --c-orange-tint: #ffe3cc; --c-orange: #ff8a3d; --c-orange-lip: #d9631c;
+  --c-sky-tint: #dff1ff; --c-sky: #4fb3f6; --c-sky-lip: #2b86c8;
+  --c-berry-tint: #ffe1ec; --c-berry: #ff7aa8; --c-berry-lip: #d94f80;
+  --c-lav-tint: #ece6ff; --c-lav: #9b82f5; --c-lav-lip: #7158d1;
+  --c-wood: #c98b4a; --c-wood-lip: #9c6330;
+  --color-ink: #3a2f2a;
+  --color-muted: #8a7766;
+  --color-paper: #fff9ec;
+  --color-card: #ffffff;
+  --color-paper-lip: #f0dfc2;
+  --color-sage: var(--c-grass-tint);
+  --color-primary: var(--c-grass);
+  --color-primary-hover: #5bd069;
+  --color-accent: var(--c-orange);
+  --color-border: var(--color-paper-lip);
+  --radius-s: 16px;
+  --radius-m: 24px;
+  --radius-l: 32px;
+  --radius-pill: 999px;
+  --radius-button: var(--radius-pill);
+  --lip-s: 4px;
+  --lip-m: 6px;
+  --lip-l: 8px;
+  --shadow-soft: 0 10px 22px rgb(150 95 30 / .14);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-hover: ease;
+  --motion-press: 140ms;
+  --motion-state: 200ms;
+  --motion-enter: 250ms;
+  --motion-feedback: 200ms;
+  /* Playful object feedback and reward only: approved spring 0.5s / bounce .2. */
+  --motion-spring-duration: 500ms;
+  --motion-bounce: 0.2;
+  --motion-sample: 1300ms;
+  --press-scale: .96;
+}

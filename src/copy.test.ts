@@ -1,0 +1,3 @@
+import {it,expect} from 'vitest';import {exerciseInstruction} from './copy';
+it('shows only the current game action after reading',()=>{for(const [kind,text] of [['basket','Положи предмет в кузовок'],['leaves','Выбери лист'],['clouds','Коснись тучки'],['garages','Перетащи машину к такому же слогу']]){expect(exerciseInstruction(kind,0,true)).toBe(text);expect(exerciseInstruction(kind,1,false)).toBe('')}});
+it('explains reading at the first word without repeating it throughout the task',()=>{expect(exerciseInstruction('intro-reading',0,false)).toBe('Веди от точки и читай');expect(exerciseInstruction('intro-reading',1,false)).toBe('');expect(exerciseInstruction('',0,false,true)).toBe('Веди от точки и читай');expect(exerciseInstruction('',1,false,true)).toBe('')});
