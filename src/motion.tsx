@@ -3,6 +3,7 @@ import {animate} from 'motion';
 // All timings and spring values are sourced from src/tokens.css.
 const token=(name:string)=>getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 export const gentleMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.dataset.input==='keyboard';
+export const motionSeconds=(name:string)=>parseFloat(token(name))/1000;
 export const springOptions=()=>({type:'spring' as const,duration:parseFloat(token('--motion-spring-duration'))/1000,bounce:Number(token('--motion-bounce'))});
 export function SpringArt({children,trigger=true,className=''}:{children:ReactNode;trigger?:unknown;className?:string}){
  const ref=useRef<HTMLSpanElement>(null);

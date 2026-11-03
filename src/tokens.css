@@ -43,6 +43,7 @@
   --motion-reading-unit: 900ms;
   --motion-reading-gap: 180ms;
   --motion-playing-bar: 420ms;
+  --motion-hop: 560ms;
   /* Lesson reward sequence: star pops, then confetti, then text, then actions. */
   --ease-overshoot: cubic-bezier(0.34, 1.56, 0.64, 1);
   --motion-reward-pop: 650ms;

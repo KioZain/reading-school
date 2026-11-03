@@ -1,5 +1,5 @@
 import type {ReactNode} from 'react';
-export type IconName='book'|'home'|'profile'|'settings'|'undo'|'arrow'|'lock'|'check'|'star'|'trail'|'people'|'leaf'|'cloud'|'cake'|'car'|'pencil'|'notebook'|'bear'|'bug'|'sun'|'flower'|'fox'|'info'|'bunny'|'chick'|'frog'|'sound'|'sparkle'|'megaphone'|'stop'|'play'|'help'|'close';
+export type IconName='book'|'home'|'profile'|'settings'|'undo'|'arrow'|'lock'|'check'|'star'|'trail'|'people'|'leaf'|'cloud'|'cake'|'car'|'pencil'|'notebook'|'bear'|'bug'|'sun'|'flower'|'fox'|'info'|'bunny'|'chick'|'frog'|'sound'|'sparkle'|'megaphone'|'stop'|'play'|'help'|'close'|'back'|'bubble'|'edit';
 // Mirrors the toy palette in tokens.css. Illustrations bake their colours in; glyphs use currentColor.
 const C={ink:'#3a2f2a',white:'#fff',grass:'#4cc35a',grassLip:'#2f9a40',grassLight:'#8ee07f',sun:'#ffc93c',sunLip:'#f0a91c',orange:'#ff8a3d',orangeLip:'#d9631c',skyTint:'#dff1ff',skyShade:'#bfe1fa',sky:'#4fb3f6',berry:'#ff7aa8',berryTint:'#ffe1ec',lav:'#9b82f5',lavLip:'#7158d1',brown:'#c98b4a',brownLip:'#9c6330',cream:'#ffe9c9',steel:'#ddd5cc',cherry:'#ff5468'};
 const hole={fill:'var(--icon-hole, #fff)'};
@@ -29,6 +29,9 @@ const glyphs:Partial<Record<IconName,ReactNode>>={
  stop:<rect x="6" y="6" width="12" height="12" rx="3" fill="currentColor"/>,
  play:<path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.8l-10-6.5A1 1 0 0 0 8 5.5Z" fill="currentColor"/>,
  help:<><circle cx="12" cy="12" r="9" fill="currentColor" stroke="none"/><path d="M9.4 9.4a2.6 2.6 0 1 1 3.7 2.4c-.7.3-1.1.9-1.1 1.6v.4" style={{stroke:'var(--icon-hole, #fff)'}} strokeWidth="2.6"/><circle cx="12" cy="16.9" r="1.5" style={hole} stroke="none"/></>,
+ back:<path d="M19 12H5.5M11 6.5 5.5 12l5.5 5.5"/>,
+ bubble:<path d="M5 4.5h14a2.5 2.5 0 0 1 2.5 2.5v7.5a2.5 2.5 0 0 1-2.5 2.5h-6.5l-5 3.5V17H5a2.5 2.5 0 0 1-2.5-2.5V7A2.5 2.5 0 0 1 5 4.5Z" fill="currentColor"/>,
+ edit:<><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 0l.5.5a2.1 2.1 0 0 1 0 3L8.5 19Z" fill="currentColor"/><path d="M13.5 7l3.5 3.5" style={{stroke:'var(--icon-hole, #fff)'}} strokeWidth="2"/></>,
  close:<path d="M7 7l10 10M17 7 7 17" strokeWidth="3.2"/>,
  sparkle:<path d="M12 4c.8 4.4 2.2 6.4 6.5 8-4.3 1.6-5.7 3.6-6.5 8-.8-4.4-2.2-6.4-6.5-8 4.3-1.6 5.7-3.6 6.5-8Z" fill="currentColor"/>,
 };
